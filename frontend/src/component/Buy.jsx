@@ -10,7 +10,7 @@ const Buy = () => {
 
   const getPost = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/goods/getPost");
+      const res = await axios.get("https://agrowtik-back.vercel.app/goods/getPost");
       setPosts(res.data);
     } catch (error) {
       console.log(error + error.message + " from Buy.jsx");
@@ -40,7 +40,7 @@ const Buy = () => {
     console.log(buyInfo);
 
     try {
-      const res = await axios.post("http://localhost:3000/goods/bidGoods", buyInfo);
+      const res = await axios.post("https://agrowtik-back.vercel.app/goods/bidGoods", buyInfo);
       if (res) {
         console.log(res + "manish");
         window.location.reload();

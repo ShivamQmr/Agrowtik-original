@@ -38,7 +38,7 @@ const Sell = () => {
     };
     setSubmitFlag(true);
     await axios
-      .post("http://localhost:3000/goods/postGoods", goodsInfo)
+      .post("https://agrowtik-back.vercel.app/goods/postGoods", goodsInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

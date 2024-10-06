@@ -13,7 +13,7 @@ const UserPost = () => {
       id: authUser._id,
     };
     try {
-      const res = await axios.post("http://localhost:3000/goods/getUserPost", info);
+      const res = await axios.post("https://agrowtik-back.vercel.app/goods/getUserPost", info);
       setUserPost(res.data);
       console.log("Response data:", res.data);
     } catch (error) {
@@ -42,7 +42,7 @@ const UserPost = () => {
       id: id,
     };
     try {
-      const res = await axios.post("http://localhost:3000/goods/toDelInfo", toDelInfo);
+      const res = await axios.post("https://agrowtik-back.vercel.app/goods/toDelInfo", toDelInfo);
       if (res) {
         // Refresh the user posts after deletion
         getUserPost();
@@ -61,7 +61,7 @@ const UserPost = () => {
     };
 
     try {
-      const res = await axios.post("http://localhost:3000/goods/getSold", toSellInfo);
+      const res = await axios.post("https://agrowtik-back.vercel.app/goods/getSold", toSellInfo);
       console.log(res.data + " from to sell");
       // Optionally refresh the user posts after selling
       getUserPost();
