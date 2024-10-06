@@ -19,7 +19,7 @@ const Signupfrom = () => {
       type: data.type,
     };
     await axios
-      .post("http://localhost:3000/user/signup", userInfo)
+      .post("https://agrowtik-back.vercel.app/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

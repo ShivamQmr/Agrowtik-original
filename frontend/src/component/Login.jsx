@@ -16,7 +16,7 @@ const Login = () => {
       password: data.password,
     };
     await axios
-      .post("http://localhost:3000/user/login", userInfo)
+      .post("https://agrowtik-back.vercel.app/user/login", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
