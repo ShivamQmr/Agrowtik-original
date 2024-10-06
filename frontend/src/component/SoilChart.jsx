@@ -1,7 +1,6 @@
 import React from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 
-// Sample data for the chart
 const soilData = [
   { demand: 10, usdSMAP: 80, subSurface: 90, subSurfaceAnomaly: 50, surface: 100, surfaceAnomaly: 60 },
   { demand: 50, usdSMAP: 150, subSurface: 120, subSurfaceAnomaly: 80, surface: 130, surfaceAnomaly: 100 },
